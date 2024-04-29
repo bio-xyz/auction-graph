@@ -609,4 +609,17 @@ export class AuctionDetail extends Entity {
   set usdAmountTraded(value: BigDecimal) {
     this.set("usdAmountTraded", Value.fromBigDecimal(value));
   }
+
+  get isSettled(): boolean {
+    let value = this.get("isSettled");
+    if (!value || value.kind == ValueKind.NULL) {
+      return false;
+    } else {
+      return value.toBoolean();
+    }
+  }
+
+  set isSettled(value: boolean) {
+    this.set("isSettled", Value.fromBoolean(value));
+  }
 }
