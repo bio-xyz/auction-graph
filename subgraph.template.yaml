@@ -45,3 +45,9 @@ dataSources:
         - event: UserRegistration(indexed address,uint64)
           handler: handleUserRegistration
       file: ./src/mapping.ts
+# for satsuma deployments on mainnet this graft can be used to speed up syncing massively. it does not work for other chains 
+features:
+  - grafting
+graft:
+  base: Qma2fCwRnptQ2TSoBryUxRoDbuHVj4g81cfb1JCaPZ4TQv
+  block: 19709169

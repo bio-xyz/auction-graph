@@ -45,3 +45,8 @@ dataSources:
         - event: UserRegistration(indexed address,uint64)
           handler: handleUserRegistration
       file: ./src/mapping.ts
+features:
+  - grafting
+graft:
+  base: Qma2fCwRnptQ2TSoBryUxRoDbuHVj4g81cfb1JCaPZ4TQv
+  block: 19709169

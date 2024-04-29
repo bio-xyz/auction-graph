@@ -46,3 +46,8 @@ dataSources:
         - event: UserRegistration(indexed address,uint64)
           handler: handleUserRegistration
       file: EasyAuction/EasyAuction.wasm
+features:
+  - grafting
+graft:
+  base: Qma2fCwRnptQ2TSoBryUxRoDbuHVj4g81cfb1JCaPZ4TQv
+  block: 19709169
